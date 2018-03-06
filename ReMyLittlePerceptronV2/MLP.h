@@ -56,6 +56,8 @@ class MyLittlePerceptron {
 		void calcLayerInput(int h);
 		void calcLayerOutput(int h);
 		vector<float> classify(vector<float> in);
+		void calculateLayerError(int timeStep);
+		void updateWeights(int timestep, double eta);
 };
 
 #endif

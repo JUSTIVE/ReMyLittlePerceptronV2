@@ -94,3 +94,17 @@ vector<float> MyLittlePerceptron::classify(vector<float> in) {
 	}
 	return layers[Height - 1].out;
 }
+
+void MyLittlePerceptron::calculateLayerError(int timeStep) {
+	int i=0, j=0;
+	WeightMatrix *w = &(weightMatricies[timeStep]);
+	for (; i < layers[timeStep].dimension; ++i) {
+		double sum = 0;
+		for (j = 0; j < layers[timeStep + 1].dimension; ++j) {
+			sum += w->weights[j*w->inputDimension + i] * layers[timeStep + 1].err[j];
+		}
+		layers[timeStep].err[i] = dxActivationFunction(layers[timeStep].in[i])*sum;
+	}
+}
+
+
