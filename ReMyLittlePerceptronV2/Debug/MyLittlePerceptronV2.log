@@ -1,0 +1,10 @@
+﻿  MLP.h
+c:\users\benkim\documents\visual studio 2017\projects\mylittleperceptronv2\mylittleperceptronv2\mlp.h(46): error C2371: 'MyLittlePerceptron::layers': redefinition; different basic types
+  c:\users\benkim\documents\visual studio 2017\projects\mylittleperceptronv2\mylittleperceptronv2\mlp.h(43): note: see declaration of 'MyLittlePerceptron::layers'
+  MLP.cpp
+c:\users\benkim\documents\visual studio 2017\projects\mylittleperceptronv2\mylittleperceptronv2\mlp.h(46): error C2371: 'MyLittlePerceptron::layers': redefinition; different basic types
+  c:\users\benkim\documents\visual studio 2017\projects\mylittleperceptronv2\mylittleperceptronv2\mlp.h(43): note: see declaration of 'MyLittlePerceptron::layers'
+c:\users\benkim\documents\visual studio 2017\projects\mylittleperceptronv2\mylittleperceptronv2\mlp.cpp(20): error C2228: left of '.push_back' must have class/struct/union
+c:\users\benkim\documents\visual studio 2017\projects\mylittleperceptronv2\mylittleperceptronv2\mlp.cpp(30): error C2228: left of '.push_back' must have class/struct/union
+c:\users\benkim\documents\visual studio 2017\projects\mylittleperceptronv2\mylittleperceptronv2\mlp.cpp(43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
